@@ -6,3 +6,7 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+ const list = document.querySelector('#ingredients');
+  const readyMember = ingredients.map((ingredient)=>`<li class="item">${ingredient}</li>`)
+  .join(" ");
+    list.innerHTML = readyMember;
