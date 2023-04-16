@@ -13,3 +13,7 @@ const images = [
   },
 ];
 
+const galleryEl = document.querySelector(".gallery");
+const imgListEl = images.map((image)=> `<li class = "gallery-item" ><img class = "gallery-image" src ="${image.url}" width ="640" alt ="${image.alt}"></li>`).join(" ");
+galleryEl.insertAdjacentHTML("afterbegin", imgListEl);
+galleryEl.style.display = "block";
